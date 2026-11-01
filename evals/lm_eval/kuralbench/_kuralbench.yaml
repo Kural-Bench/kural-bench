@@ -1,0 +1,9 @@
+group: kuralbench
+group_alias: kuralbench
+task:
+  - kuralbench_recall
+  - kuralbench_text
+  - kuralbench_meaning
+  - kuralbench_metre
+metadata:
+  version: 1.0

@@ -1,0 +1,5 @@
+include: _kuralbench_template_yaml
+task: kuralbench_gloss
+dataset_kwargs:
+  data_files:
+    dev: data/dev/gloss.jsonl

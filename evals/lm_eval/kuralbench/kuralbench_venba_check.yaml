@@ -1,0 +1,5 @@
+include: _kuralbench_template_yaml
+task: kuralbench_venba_check
+dataset_kwargs:
+  data_files:
+    dev: data/dev/venba_check.jsonl
