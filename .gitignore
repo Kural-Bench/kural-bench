@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+tools/brand/fonts/
+tools/brand/.cache/
+tools/brand/.shots/
+dist/
+logs/
