@@ -1,0 +1,144 @@
+{
+  "files": {
+    "adhikarams.jsonl": {
+      "fields": [
+        "number",
+        "paal_number",
+        "first_kural",
+        "last_kural",
+        "name_ta",
+        "name_en"
+      ],
+      "licence": "CC0-1.0",
+      "rows": 133,
+      "sha256": "2e52bc4f28dfe75f097f6f8c5b478118ecc21edb9804b069f13b8d01956159d8",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_path": "data/core/adhikarams.jsonl",
+      "upstream_sha256": "fc7b5402e52ac999b4b571966ea20a035cfb83cb37fdb6d86668ab39477b9c42"
+    },
+    "aiyar1916-en.jsonl": {
+      "fields": [
+        "kural_id",
+        "text",
+        "author",
+        "work_title",
+        "license"
+      ],
+      "licence": "public domain",
+      "rows": 1330,
+      "sha256": "09eb0539afb43c082266a7222345bc9888741104b450ad306b9fe995a15be25f",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_path": "data/layers/aiyar1916-en.jsonl",
+      "upstream_sha256": "221dcdfc69789345b3ab52d1d9d11a81df5b7e636b7d8e47c54d7efad54345de"
+    },
+    "drew-lazarus-en.jsonl": {
+      "fields": [
+        "kural_id",
+        "text",
+        "author",
+        "work_title",
+        "license"
+      ],
+      "licence": "public domain",
+      "rows": 1330,
+      "sha256": "2502d04c866927e22a43623327fc49c99edf26f8e13259c26105d9f95f666fe6",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_path": "data/layers/drew-lazarus-en.jsonl",
+      "upstream_sha256": "0ed2da286e4ff3f772a0d72f428bdf05dc854984ab4622ef8d883c1fbd53adda"
+    },
+    "kurals.jsonl": {
+      "fields": [
+        "id",
+        "number",
+        "paal_number",
+        "adhikaram_number",
+        "position",
+        "lines_ta",
+        "text_status"
+      ],
+      "licence": "CC0-1.0",
+      "rows": 1330,
+      "sha256": "e9df305547218faec6f333d070e273b6746e619744472c122ae12dcb99361f43",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_path": "data/core/kurals.jsonl",
+      "upstream_sha256": "2a75cdfed19cedfe0187696a0ef4d5f74ca2313290931bbf268e581ece137227"
+    },
+    "parimelazhagar_struct.jsonl": {
+      "fields": [
+        "kural_id",
+        "pada_urai",
+        "flags",
+        "source_id",
+        "locator",
+        "source_sha256"
+      ],
+      "licence": "MIT",
+      "rows": 1330,
+      "sha256": "cb227e6563a9636cab42ccdf233df3c3761518528587cb51e9fbdfb58e67d4ad",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_config": {
+        "data": "data/signature/parimelazhagar_struct.jsonl",
+        "description": "Parimelazhagar's commentary read as data, by rule: the kural's words in his prose order with his gloss for each phrase, the situation note (turai) for the love verses, how he groups kurals inside a chapter, his statement of what a verse teaches, the variant readings he reports and his stance on them, the other commentators he cites, and the figures, grammar and works he names. Every value is a span copied from the commentary in parimelazhagar_ta (same carrier, same MIT terms, same unidentified printed edition); nothing is paraphrased and no model is involved.",
+        "license": "MIT",
+        "name": "parimelazhagar_struct",
+        "path": "release/configs/parimelazhagar_struct.json",
+        "rows": null,
+        "sha256": "72f55c1811904077408a5513b317f7234f02ee0ef2c642642553aa117e0ef0a3"
+      },
+      "upstream_path": "data/signature/parimelazhagar_struct.jsonl",
+      "upstream_sha256": "c81082c44b3ccb8018e74f99a5249b39675000d99f2584b1eda6da761c3cc04f"
+    },
+    "pope1886-en.jsonl": {
+      "fields": [
+        "kural_id",
+        "text",
+        "author",
+        "work_title",
+        "license"
+      ],
+      "licence": "public domain",
+      "rows": 1330,
+      "sha256": "76be44f30fe23d6e3c19ea261a71e171f47d78f715ffe707490b605ecb137e01",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_path": "data/layers/pope1886-en.jsonl",
+      "upstream_sha256": "3fe1497cf0df3d5a2c7e7de8c76b3ee5b81c2c78710b69681a9dbc44a99d8875"
+    },
+    "variants_atlas.jsonl": {
+      "fields": [
+        "kural_id",
+        "reading_id",
+        "text",
+        "status",
+        "same_letters_as_canonical",
+        "ledger_id",
+        "carrier_licences",
+        "text_sha256"
+      ],
+      "licence": "CC0-1.0",
+      "rows": 2846,
+      "sha256": "a75239f236bd9b98e3d9e993fc1e3541be77c54d31285e38d39fbb30550bec57",
+      "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+      "upstream_config": {
+        "data": "data/signature/variants_atlas.jsonl",
+        "description": "Every attested reading of every kural, classified against the canonical text, with its witnesses and the ruling that decided it. Readings carried only under CC-BY-SA are in variants_atlas_sa.",
+        "license": "CC0-1.0",
+        "name": "variants_atlas",
+        "path": "release/configs/variants_atlas.json",
+        "rows": "not_share_alike_only",
+        "sha256": "f3a4b75a35a529ac9b8e799a792060f4bd90c0aab53ac28519c18c31e64ba593"
+      },
+      "upstream_path": "data/signature/variants_atlas.jsonl",
+      "upstream_sha256": "0e866829c011a0e806f16b3812c9f979fa1a03714ad726cbabeb1a41d02409f7"
+    }
+  },
+  "licence_files": {
+    "LICENSES/MIT-parimelazhagar_struct.txt": {
+      "applies_to": "parimelazhagar_struct.jsonl",
+      "sha256": "cdb6e3a8d9ba7433df584894b5d2a312465aa53174f17e39b37f0255d940fb17",
+      "upstream_path": "release/licenses/MIT.txt",
+      "upstream_sha256": "fd80a26fbb3f644af1fa994134446702932968519797227e07a1368dea80f0bc"
+    }
+  },
+  "upstream_commit": "f5e2b6753052d098b745b6857bfd3378071e6d65",
+  "upstream_repo": "ashwingopalsamy/thirukkural"
+}
