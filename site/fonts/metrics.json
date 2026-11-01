@@ -1,0 +1,14 @@
+{
+ "mono": {
+  "ascent": 1.0252,
+  "descent": 0.275,
+  "line_gap": 0.0,
+  "size_adjust": 0.9998
+ },
+ "sans": {
+  "ascent": 0.9922,
+  "descent": 0.2662,
+  "line_gap": 0.0,
+  "size_adjust": 1.0331
+ }
+}
