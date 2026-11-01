@@ -1,0 +1,35 @@
+name: Bug report
+description: A scorer, generator, harness task or item behaves wrongly
+title: "Bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: For a wrong item, give its id, such as exact_pick:tk:0001.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. git checkout <commit>
+        2. <the command you ran>
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit or release version
+      placeholder: v1.4.0
+    validations:
+      required: true

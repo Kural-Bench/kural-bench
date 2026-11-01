@@ -1,0 +1,28 @@
+name: release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release, e.g. 1.4.0 (its CHANGELOG section becomes the notes)"
+        required: true
+      sha:
+        description: "Commit to tag"
+        required: true
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Release notes from CHANGELOG
+        run: |
+          awk -v v="${{ inputs.version }}" '$0 ~ "^## "v" " {f=1; next} /^## / {f=0} f' CHANGELOG.md > notes.md
+          test -s notes.md
+      - name: Tag and release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${{ inputs.version }}" --target "${{ inputs.sha }}" \
+            --title "KuralBench ${{ inputs.version }}" --notes-file notes.md
